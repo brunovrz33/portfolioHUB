@@ -3,59 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioHUB - Meu Portfólio</title>
+    <title>PortfolioHUB | SEU NOME</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        section { padding: 20px; max-width: 800px; margin: auto; background: #fff; margin-top: 10px; border-radius: 8px; }
-        h2 { color: #333; border-bottom: 2px solid #333; padding-bottom: 5px; }
-        .contact-links a { margin-right: 15px; text-decoration: none; color: blue; font-weight: bold; }
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text: #c9d1d9;
+            --main: #58a6ff;
+            --border: #30363d;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; }
+        header { background-color: var(--card-bg); padding: 3rem 1rem; text-align: center; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--main); margin: 0; font-size: 2.5rem; }
+        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+        section { background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 20px; }
+        h2 { color: var(--main); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 0; }
+        .btn { display: inline-block; background: #21262d; color: var(--main); padding: 10px 20px; text-decoration: none; border-radius: 6px; border: 1px solid var(--border); font-weight: bold; margin: 5px 5px 5px 0; transition: 0.3s; }
+        .btn:hover { background: var(--border); border-color: #8b949e; }
+        .project-card { background: var(--bg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--main); margin: 15px 0; }
+        .skill-tag { display: inline-block; background: rgba(88, 166, 255, 0.1); color: var(--main); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; margin: 4px; border: 1px solid var(--main); }
+        blockquote { font-style: italic; border-left: 4px solid var(--border); padding-left: 15px; color: #8b949e; }
+        footer { text-align: center; padding: 40px; color: #8b949e; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>PortfolioHUB</h1>
-    <p>Bruno Venicius De Almeida Ribeiro</p>
+    <p>Engenharia de Software | Desenvolvedor em Formação</p>
 </header>
 
-<section id="perfil">
-    <h2>Perfil Pessoal</h2>
-    <p><strong>Bio:</strong> Olá, me chamo Bruno, tenho 20 anos e sonho em crescer na área de t.i. Eu sonho alto e pretendo ser um DevOps e também especializado em Cloud-Computing. </p>
-    <div class="contact-links">
-        <a href="mailto:brunovrz@sempreceub.com">E-mail</a>
-        <a href="https://www.linkedin.com/in/bruno-almeida-780244271/" target="_blank">LinkedIn</a>
-        <a href="https://github.com" target="_blank">GitHub</a>
-    </div>
-</section>
+<div class="container">
+    <section id="perfil">
+        <h2>Perfil Pessoal</h2>
+        <p><strong>Olá, eu sou o [SEU NOME COMPLETO]!</strong></p>
+        <p>Estudante de Engenharia de Software apaixonado por tecnologia e resolução de problemas. Atualmente focado em aprender boas práticas de desenvolvimento, versionamento com Git e arquitetura de sistemas.</p>
+        <div class="contact-links">
+            <a href="mailto:SEU-EMAIL@EMAIL.COM" class="btn">E-mail</a>
+            <a href="LINK-DO-SEU-LINKEDIN" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="btn">GitHub</a>
+        </div>
+    </section>
 
-<section id="curriculo">
-    <h2>Currículo & Experiência</h2>
-    <p><strong>Formação:</strong> Engenharia de Software - CEUB</p>
-    <p><strong>Habilidades:</strong> C#, Python, Node.js, JS, Git,</p>
-</section>
+    <section id="curriculo">
+        <h2>Currículo & Habilidades</h2>
+        <p><strong>Formação:</strong> Bacharelado em Engenharia de Software (Em andamento)</p>
+        <div style="margin-top: 15px;">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">Lógica de Programação</span>
+            <span class="skill-tag">Metodologias Ágeis</span>
+        </div>
+    </section>
 
-<section id="projetos">
-    <h2>Meus Projetos</h2>
-    <ul>
-        <li><strong>Projeto 1:</strong> Descrição breve e <a href="#">Link do Repositório</a></li>
-        <li><strong>Projeto 2:</strong> Descrição breve e <a href="#">Link do Repositório</a></li>
-    </ul>
-</section>
+    <section id="projetos">
+        <h2>Projetos em Destaque</h2>
+        <div class="project-card">
+            <strong>🚀 Projeto de Automação:</strong> Descrição do que o projeto faz e as tecnologias usadas.
+            <br><a href="LINK-DO-REPOSITORIO-1" target="_blank" style="color: var(--main);">Ver código no GitHub</a>
+        </div>
+        <div class="project-card">
+            <strong>💻 Sistema Acadêmico:</strong> Breve descrição de outro projeto seu.
+            <br><a href="LINK-DO-REPOSITORIO-2" target="_blank" style="color: var(--main);">Ver código no GitHub</a>
+        </div>
+    </section>
 
-<section id="habilidades-slides">
-    <h2>Apresentação de Habilidades (Slides)</h2>
-    <p>Clique no link abaixo para ver minha apresentação detalhada:</p>
-    <a href="https://docs.google.com/presentation/d/13HqdiWwklrs0vHKtfLuafOZqkhbD-o_G_AtpFDGFoek/edit?usp=sharing" target="_blank">Ver Slides de Competências</a>
-</section>
+    <section id="slides" style="text-align: center;">
+        <h2>Apresentação Visual</h2>
+        <p>Acesse minha apresentação detalhada de competências e objetivos de carreira:</p>
+        <a href="LINK-DO-SLIDE-QUE-VOCE-ME-MANDOU" target="_blank" class="btn" style="background: var(--main); color: white;">Ver Slides de Competências</a>
+    </section>
 
-<section id="recomendacoes">
-    <h2>Recomendações</h2>
-    <blockquote>"O Bruno é um excelente estudante e demonstra grande domínio técnico." - Nome do Professor/Colega</blockquote>
-</section>
+    <section id="recomendacoes">
+        <h2>Recomendações</h2>
+        <blockquote>"Estudante dedicado, com ótima capacidade de aprendizado técnico e trabalho em equipe." - Nome de um Professor ou Colega</blockquote>
+    </section>
+</div>
 
-<footer style="text-align: center; padding: 20px;">
-    <p>&copy; 2026 - Criado para o desafio PortfolioHUB</p>
+<footer>
+    &copy; 2026 | Desenvolvido por [SEU NOME] para o Desafio PortfolioHUB
 </footer>
 
 </body>
